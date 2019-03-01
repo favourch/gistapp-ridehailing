@@ -1,0 +1,27 @@
+[06-Feb-2019 13:42:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/mo7tiaumd637/public_html/public/cities.php:193
+Stack trace:
+#0 {main}
+  thrown in /home/mo7tiaumd637/public_html/public/cities.php on line 193
+[06-Feb-2019 13:44:28 UTC] PHP Warning:  include(../resources/views/city.php): failed to open stream: No such file or directory in /home/mo7tiaumd637/public_html/public/cities.php on line 1
+[06-Feb-2019 13:44:28 UTC] PHP Warning:  include(): Failed opening '../resources/views/city.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/mo7tiaumd637/public_html/public/cities.php on line 1
+[06-Feb-2019 13:44:33 UTC] PHP Warning:  include(../resources/views/city.php): failed to open stream: No such file or directory in /home/mo7tiaumd637/public_html/public/cities.php on line 1
+[06-Feb-2019 13:44:33 UTC] PHP Warning:  include(): Failed opening '../resources/views/city.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/mo7tiaumd637/public_html/public/cities.php on line 1
+[06-Feb-2019 13:44:53 UTC] PHP Warning:  include(../resources/views/city.php): failed to open stream: No such file or directory in /home/mo7tiaumd637/public_html/public/cities.php on line 1
+[06-Feb-2019 13:44:53 UTC] PHP Warning:  include(): Failed opening '../resources/views/city.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/mo7tiaumd637/public_html/public/cities.php on line 1
+[06-Feb-2019 13:46:11 UTC] PHP Warning:  include(../resources/views/city.php): failed to open stream: No such file or directory in /home/mo7tiaumd637/public_html/public/cities.php on line 1
+[06-Feb-2019 13:46:11 UTC] PHP Warning:  include(): Failed opening '../resources/views/city.php' for inclusion (include_path='.:/opt/alt/php70/usr/share/pear') in /home/mo7tiaumd637/public_html/public/cities.php on line 1
+[06-Feb-2019 13:48:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/mo7tiaumd637/public_html/resources/views/city.php:193
+Stack trace:
+#0 /home/mo7tiaumd637/public_html/public/cities.php(1): include()
+#1 {main}
+  thrown in /home/mo7tiaumd637/public_html/resources/views/city.php on line 193
+[06-Feb-2019 13:49:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/mo7tiaumd637/public_html/resources/views/city.php:193
+Stack trace:
+#0 /home/mo7tiaumd637/public_html/public/cities.php(1): include()
+#1 {main}
+  thrown in /home/mo7tiaumd637/public_html/resources/views/city.php on line 193
+[06-Feb-2019 13:58:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function asset() in /home/mo7tiaumd637/public_html/resources/views/city.php:193
+Stack trace:
+#0 /home/mo7tiaumd637/public_html/public/cities.php(1): include()
+#1 {main}
+  thrown in /home/mo7tiaumd637/public_html/resources/views/city.php on line 193

@@ -1,0 +1,1 @@
+<?php include("../resources/views/city.php"); ?>

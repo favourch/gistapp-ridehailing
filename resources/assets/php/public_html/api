@@ -1,0 +1,29 @@
+<?php
+$dsn = "mysql:dbname=taxibeiz;host=localhost";
+$user = "taxibeiz";
+$password = "P@ssw0rd";
+try {
+        $pdo = new PDO($dsn, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+} catch (PDOException $e) {
+        header("X-Pdo-Error: ".$e->getMessage());
+        http_response_code(503);
+        die();
+}
+try {
+        $st = $pdo->prepare("INSERT INTO user SET name=:name, message=:message");
+        $defaults = array("name"=>null, "message"=>null);
+        $data = array_merge($defaults, array_intersect_key($_POST, $defaults));
+        $st->execute($data);
+        $numRows = $st->rowCount();
+} catch (PDOException $e) {
+        error_log($e->getMessage());
+        header("X-Pdo-Error: ".$e->getMessage());
+        http_response_code(500);
+        die();
+}
+header("Content-type: application/json");
+?>
+{
+"title": "Success",
+"html": "<p><?= $numRows ?> rows inserted.</p>"
+}
