@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ Setting::get('site_title','Tranxit') }}</title>
+    <title>{{ Setting::get('site_title','GistApp') }}</title>
 
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/png" href="{{ Setting::get('site_icon') }}"/>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="{{secure('asset/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{secure('asset/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{secure('asset/css/style.css')}}" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
