@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://gistapp-ridehailing.herokuapp.com/'),
+    'url' => env('APP_URL', 'http://gistapp-ridehailing.herokuapp.com/'),
 
     /*
     |--------------------------------------------------------------------------
