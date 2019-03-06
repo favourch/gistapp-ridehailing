@@ -11,7 +11,6 @@
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/png" href="{{ Setting::get('site_icon') }}"/>
 
-    <!--<link href="{{secure('asset/css/bootstrap.min.css')}}" rel="stylesheet">-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{secure('asset/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{secure('asset/css/style.css')}}" rel="stylesheet">
