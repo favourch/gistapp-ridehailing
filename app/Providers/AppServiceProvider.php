@@ -2,8 +2,6 @@
 
 namespace App\Providers;
 use Illuminate\Routing\UrlGenerator;
-class AppServiceProvider extends ServiceProvider
-
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
