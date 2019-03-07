@@ -12,9 +12,9 @@
     <link rel="shortcut icon" type="image/png" href="{{ Setting::get('site_icon') }}"/>
 
     
-    <link href="{{secure_asset('asset/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{secure_asset('asset/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
-    <link href="{{secure_asset('asset/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('asset/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('asset/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('asset/css/style.css')}}" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -156,9 +156,9 @@
         </div>
     </div>
 
-    <script src="{{secure_asset('asset/js/jquery.min.js')}}"></script>
-    <script src="{{secure_asset('asset/js/bootstrap.min.js')}}"></script>
-    <script src="{{secure_asset('asset/js/scripts.js')}}"></script>
+    <script src="{{asset('asset/js/jquery.min.js')}}"></script>
+    <script src="{{asset('asset/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('asset/js/scripts.js')}}"></script>
 
     @if(Setting::get('demo_mode', 0) == 1)
         <!-- Start of LiveChat (www.livechatinc.com) code -->
