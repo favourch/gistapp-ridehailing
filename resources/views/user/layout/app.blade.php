@@ -12,9 +12,9 @@
     <link rel="shortcut icon" type="image/png" href="{{ Setting::get('site_icon') }}"/>
 
     
-    <link href="{{secure_asset('asset/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{secure_asset('asset/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
-    <link href="{{secure_asset('asset/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('asset/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('asset/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('asset/css/style.css')}}" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -47,10 +47,10 @@
                     <a href="terms/index.php">Terms and Conditions</a>
                 </li>
                 <li>
-                    <a href="https://itunes.apple.com/us/app"><img src="{{ secure_asset('/asset/img/appstore-white.png') }}"></a>
+                    <a href="https://itunes.apple.com/us/app"><img src="{{ asset('/asset/img/appstore-white.png') }}"></a>
                 </li>
                 <li>
-                    <a href="https://play.google.com/store/apps/"><img src="{{ secure_asset('/asset/img/playstore-white.png') }}"></a>
+                    <a href="https://play.google.com/store/apps/"><img src="{{ asset('/asset/img/playstore-white.png') }}"></a>
                 </li>
             </ul>
         </nav>
@@ -73,7 +73,7 @@
                                 <span class="hamb-bottom"></span>
                             </button>
 
-                            <a class="navbar-brand" href="{{url('/')}}"><img src="{{ Setting::get('site_logo', secure_asset('logo-black.png')) }}"></a>
+                            <a class="navbar-brand" href="{{url('/')}}"><img src="{{ Setting::get('site_logo', asset('logo-black.png')) }}"></a>
                         </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
@@ -103,7 +103,7 @@
                     <div class="container">
                         <div class="footer-logo row no-margin">
                             <div class="logo-img">
-                                <img src="{{Setting::get('site_logo',secure_asset('asset/img/logo-white.png'))}}">
+                                <img src="{{Setting::get('site_logo',asset('asset/img/logo-white.png'))}}">
                             </div>
                         </div>
                         <div class="row no-margin">
@@ -125,12 +125,12 @@
                                 <ul class="app">
                                     <li>
                                         <a href="https://itunes.apple.com/us/app">
-                                            <img src="{{secure_asset('asset/img/appstore.png')}}">
+                                            <img src="{{asset('asset/img/appstore.png')}}">
                                         </a>
                                     </li>
                                     <li>
                                         <a href="https://play.google.com/store/apps/">
-                                            <img src="{{secure_asset('asset/img/playstore.png')}}">
+                                            <img src="{{asset('asset/img/playstore.png')}}">
                                         </a>
                                     </li>                                                        
                                 </ul>                        
@@ -156,9 +156,9 @@
         </div>
     </div>
 
-    <script src="{{secure_asset('asset/js/jquery.min.js')}}"></script>
-    <script src="{{secure_asset('asset/js/bootstrap.min.js')}}"></script>
-    <script src="{{secure_asset('asset/js/scripts.js')}}"></script>
+    <script src="{{asset('asset/js/jquery.min.js')}}"></script>
+    <script src="{{asset('asset/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('asset/js/scripts.js')}}"></script>
 
     @if(Setting::get('demo_mode', 0) == 1)
         <!-- Start of LiveChat (www.livechatinc.com) code -->
@@ -211,7 +211,7 @@
         }
         </script>
 
-        <script type="text/javascript" src="{{ secure_asset('asset/js/map.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('asset/js/map.js') }}"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7ysJAljkupBFv313yr-zktMOTu4KPtGs&libraries=places&callback=initMap" async defer></script>
 
 <script type="text/javascript">
