@@ -5,20 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ Setting::get('site_title','GistApp') }}</title>
+    <title>{{ Setting::get('site_title','Gistapp') }}</title>
 
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" type="image/png" href="{{ Setting::get('site_icon') }}"/>
 
-    
     <link href="{{asset('asset/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('asset/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{asset('asset/css/style.css')}}" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -41,16 +36,19 @@
                     <a href="{{ url('/drive') }}">Drive</a>
                 </li>
                 <li>
-                    <a href="terms/contact.php">Contact</a>
+                    <a href="#">Help</a>
                 </li>
                 <li>
-                    <a href="terms/index.php">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
                 </li>
                 <li>
-                    <a href="https://itunes.apple.com/us/app"><img src="{{ asset('/asset/img/appstore-white.png') }}"></a>
+                    <a href="#">Terms and Conditions</a>
                 </li>
                 <li>
-                    <a href="https://play.google.com/store/apps/"><img src="{{ asset('/asset/img/playstore-white.png') }}"></a>
+                    <a href="{{ Setting::get('store_link_ios','#') }}"><img src="{{ asset('/asset/img/appstore-white.png') }}"></a>
+                </li>
+                <li>
+                    <a href="{{ Setting::get('store_link_android','#') }}"><img src="{{ asset('/asset/img/playstore-white.png') }}"></a>
                 </li>
             </ul>
         </nav>
@@ -85,7 +83,7 @@
                                 </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="terms/contact.php">Help</a></li>
+                                <li><a href="#">Help</a></li>
                                 <li><a href="{{url('/login')}}">Signin</a></li>
                                 <li><a class="menu-btn" href="{{url('/drive')}}">Become a Driver</a></li>
                             </ul>
@@ -95,9 +93,6 @@
             </header>
 
             @yield('content')
-            <div id = "city">
-               
-            </div>
             <div class="page-content">
                 <div class="footer row no-margin">
                     <div class="container">
@@ -109,14 +104,17 @@
                         <div class="row no-margin">
                             <div class="col-md-3 col-sm-3 col-xs-12">
                                 <ul>
-                                    <li><a href="{{ url('/ride') }}">Ride</a></li>
-                                    <li><a href="{{ url('/drive') }}">Drive</a></li>
+                                    <li><a href="#">Ride</a></li>
+                                    <li><a href="#">Drive</a></li>
+                                    <li><a href="#">Cities</a></li>
+                                    <li><a href="#">Fare Estimate</a></li>
                                 </ul>
                             </div>
                             <div class="col-md-3 col-sm-3 col-xs-12">
                                 <ul>
-                                    <li><a href="{{ url('/register') }}">SIGN UP To RIDE</a></li>
-                                    <li> <a href="{{ url('/provider/register') }}">BECOME A DRIVER</a></li>                          
+                                    <li><a href="{{url('ride')}}">Signup to Ride</a></li>
+                                    <li><a href="{{url('drive')}}">Become a Driver</a></li>
+                                    <li><a href="{{url('ride')}}">Ride Now</a></li>                            
                                 </ul>
                             </div>
 
@@ -124,12 +122,12 @@
                                 <h5>Get App on</h5>
                                 <ul class="app">
                                     <li>
-                                        <a href="https://itunes.apple.com/us/app">
+                                        <a href="{{Setting::get('store_link_ios','#')}}">
                                             <img src="{{asset('asset/img/appstore.png')}}">
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://play.google.com/store/apps/">
+                                        <a href="{{Setting::get('store_link_android','#')}}">
                                             <img src="{{asset('asset/img/playstore.png')}}">
                                         </a>
                                     </li>                                                        
@@ -139,8 +137,8 @@
                             <div class="col-md-3 col-sm-3 col-xs-12">                        
                                 <h5>Connect us</h5>
                                 <ul class="social">
-                                    <li><a href="https://facebook.com/Gistapp"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="https://twitter.com/Gistapp"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 </ul>
                             </div>
                         </div>
